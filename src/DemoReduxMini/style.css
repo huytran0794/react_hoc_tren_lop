@@ -1,0 +1,61 @@
+.quantity-adjust {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.quantity-adjust input.product__quantity {
+  --box-size: 40px;
+  outline: none;
+  width: var(--box-size);
+  height: var(--box-size);
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-left-width: 0;
+  border-right-width: 0;
+  transition: 0.5s;
+}
+
+.quantity-adjust input.product__quantity:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.quantity-adjust .btn-adjust {
+  --btn-size: 40px;
+  padding: 0.5rem 0.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  width: var(--btn-size);
+  height: var(--btn-size);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.quantity-adjust input:hover,
+.quantity-adjust .btn-adjust:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.quantity-adjust .btn-adjust.btn-up {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.quantity-adjust .btn-adjust.btn-down {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.quantity-adjust .btn-adjust:hover,
+.quantity-adjust .btn-adjust:focus {
+  --bs-btn-hover-border-color: transparent;
+}
+
+.quantity-adjust .btn-adjust:active {
+  --bs-btn-active-border-color: transparent;
+}
